@@ -165,7 +165,8 @@ for i in range(start_pos, len(friends)):
 			
 			if "You’re Temporarily Blocked" in r.text:
 				print "We got blocked by Facebook. Aborting. Try again later, maybe with increased sleep() values."
-				print >> output_file, '\t\t\t\t\t\t</tbody>\n\t\t\t\t\t</table><a style="color: #ffffff" href="https://twitter.com/hashtag/deletefacebook?f=live" target="_blank">#deleteFacebook</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>'
+				if export == "html":
+					print >> output_file, '\t\t\t\t\t\t</tbody>\n\t\t\t\t\t</table><a style="color: #ffffff" href="https://twitter.com/hashtag/deletefacebook?f=live" target="_blank">#deleteFacebook</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</body>\n</html>'
 				output_file.close()
 				quit()
 			
