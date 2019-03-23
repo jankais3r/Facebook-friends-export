@@ -12,8 +12,8 @@ from bs4 import BeautifulSoup
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-#########################################################################################################
-#										BEGINING OF CONFIG SECTION										#
+#########################################################################################
+#				BEGINNING OF CONFIG SECTION				#
 			
 # Set your Facebook.com cookies - either by manual copy & paste from Console, or by sniffing a legitimate browser request. I am lazy so I went for the second option.
 cookie = "act=15246549%2F6; pnl_data2=cyJhIxvcbxchgvdfghdjkxmjsnmgjhfcIjpmYWxzZSsdfgvnhjztIi9hbGV4YWdfghiZWFudjgnbvcxsdrtQ%3D%3D; x-src=%2Ffriends%7Cpagelet_timeline_app_collection_1055433347%3A2367778758349%3A2; wd=1440x723; c_user=15335354127; fr=1sdgvb8Wlf.AWWi_c8-COsfgdhzvesecAn8.Bb7jGDq.Dm.Fxjy.0.0.Bcd3n1.AfWXkgJn3; xs=132%3AB5OtxYsfdgsgeg%3A2%3A1557765579%3A3071%3A135630; presence=EDvF3EtimeF155434277EuserFA213543354127A2EstateFDutF155135335425305CEchFDp_5f1053435327F0CC; dpr=2; spin=r.48533437_b.trunk_t.155135381_s.1_v.2_; pl=n; sb=KpLsWx8wXafsfsdfhZwZ; locale=en_US; datr=KpLssfdfsBY_i5WpB1_a"
@@ -42,8 +42,8 @@ start_pos = 0
 # If you only want to parse the manual friend extract into a nice table without enriching it with any new contact information, set this to 1. To completely eliminate pulling data from Facebook.com, don't forget to set image_download to 0. Default: 0
 parse_only = 0
 
-#										  END OF CONFIG SECTION  										#
-#########################################################################################################
+#				  END OF CONFIG SECTION  				#
+#########################################################################################
 
 start_time = time.time()
 
